@@ -9,5 +9,5 @@ jobs:
     name: Verify
     uses: jetty/.github/.github/workflows/maven-ci.yml@main
     with:
-      jdk-matrix: '[ "11", "17', "21" ]'
+      jdk-matrix: '[ "11", "17", "21" ]'
       os-matrix: '[ "ubuntu-latest", "windows-latest", "macOS-latest" ]'
