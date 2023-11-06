@@ -142,9 +142,9 @@
   </dependencies>
 
   <scm>
-    <connection>scm:git:https://github.com/eclipse/jetty.toolchain.git</connection>
-    <developerConnection>scm:git:git@github.com:eclipse/jetty.toolchain.git</developerConnection>
-    <url>https://github.com/eclipse/jetty.toolchain/tree/master/jetty-test-helper</url>
+    <connection>scm:git:https://github.com/jetty/jetty.test.helper.git</connection>
+    <developerConnection>scm:git:git@github.com:jetty/jetty.test.helper.git</developerConnection>
+    <url>https://github.com/jetty/jetty.test.helper</url>
     <tag>jetty-test-helper-6.0</tag>
   </scm>
 
