@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.eclipse.jetty</groupId>
-    <artifactId>jetty-parent-pom</artifactId>
-    <version>1-SNAPSHOT</version>
+    <artifactId>jetty-parent</artifactId>
+    <version>26-20231208.043318-1</version>
   </parent>
   <artifactId>jetty-test-helper</artifactId>
   <version>6.3-SNAPSHOT</version>
