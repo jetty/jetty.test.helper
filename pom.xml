@@ -23,7 +23,6 @@
     <jetty.git.repo>jetty.test.helper</jetty.git.repo>
     <jetty.testtracker.log>true</jetty.testtracker.log>
     <junit.engine.version>5.10.1</junit.engine.version>
-    <junit.engine.version>5.10.0</junit.engine.version>
   </properties>
   <dependencies>
     <dependency>
