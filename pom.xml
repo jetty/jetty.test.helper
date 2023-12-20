@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.eclipse.jetty</groupId>
     <artifactId>jetty-parent</artifactId>
-    <version>26-20231208.043318-1</version>
+    <version>26</version>
   </parent>
   <artifactId>jetty-test-helper</artifactId>
   <version>6.3-SNAPSHOT</version>
@@ -36,36 +36,6 @@
       <version>${junit.engine.version}</version>
     </dependency>
   </dependencies>
-
-  <!--
-  those repositories are only here because the parent is not released yet
-  and so will be removed once it's done 
-  -->
-  <repositories>
-    <repository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>jetty.snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/jetty-snapshots</url>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>jetty.snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/jetty-snapshots</url>
-    </pluginRepository>
-  </pluginRepositories>
 
   <build>
     <pluginManagement>
