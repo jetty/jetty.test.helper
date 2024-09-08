@@ -75,10 +75,12 @@ public class WorkDirExtension implements BeforeAllCallback, BeforeEachCallback, 
                 assertValidFieldCandidate(field);
                 try
                 {
-                    makeAccessible(field).set(testInstance, workdir);
+                    makeAccessible(field);
+                    field.set(testInstance, workdir);
                 }
                 catch (Throwable t)
                 {
+                    t.printStackTrace();
                     ExceptionUtils.throwAsUncheckedException(t);
                 }
             });

@@ -6,6 +6,7 @@
     <artifactId>jetty-parent</artifactId>
     <version>26</version>
   </parent>
+  <groupId>org.eclipse.jetty.toolchain</groupId>
   <artifactId>jetty-test-helper</artifactId>
   <version>6.3-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -30,9 +31,20 @@
   <properties>
     <jdk.version.minimum>11</jdk.version.minimum>
     <jetty.git.repo>jetty-test-helper</jetty.git.repo>
-    <junit.engine.version>5.11.0</junit.engine.version>
+    <junit.version>5.11.0</junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${junit.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <dependencies>
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -42,7 +54,10 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>${junit.engine.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-commons</artifactId>
     </dependency>
   </dependencies>
   <build>
